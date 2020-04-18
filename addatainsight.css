@@ -1,0 +1,50 @@
+body {
+	 background-color: grey;
+ }
+ .para1{ 
+color: red;
+font-style: italic;
+}
+h1, .para1 {
+	color: orange;
+	font-weight: 900;
+	text-align: center;
+}
+a  {
+	line-height: 2;
+}
+
+p.para2,  p.para3 {
+	text-indent: 1em;
+	padding-right: 1
+2	em
+	
+}
+div#footers, a{
+	
+	color: white;
+	font-weight: bold;
+}
+div#paragraph {
+  background-color: white;
+	color: black;
+	font-weight: bold;
+}
+div#image{
+	display: block;
+}
+
+div#nav ul li {
+	font-family: Arial, serief
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 20px;
+	
+}
+div#menu {
+	background-color: orange;
+}
+#menu {
+	border:  5px  dotted black;
+	width: 90%
+}
