@@ -1,24 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div {
-  width: 35px;
-  height: 15px;
-  background-color: black;
-  margin: 6px 0;
+/*first css*/
+body {
+	 background-color: grey;
+ }
+ .para1{ 
+color: red;
+font-style: italic;
+} 
+h1, .para1 {
+	color: orange;
+	font-weight: 900;
+	text-align: center;
 }
-</style>
-</head>
-<body>
+a  {
+	line-height: 2;
+}
 
+p.para2,  p.para3 {
+	text-indent: 1em;
+	padding-right: 1
+2	em
+	
+}
+div#footers, a{
+	
+	color: white;
+	font-weight: bold;
+}
+div#paragraph {
+  background-color: white;
+	color: black;
+	font-weight: bold;
+}
+div#image{
+	display: block;
+}
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+div#nav ul li {
+	font-family: Arial, serief
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 20px;
+	
+}
+div#menu {
+	background-color: orange;
+}
+#menu {
+	border:  5px  dotted black;
+	width: 90%
+}
+
+/*end*/
+
+/*navigationmenuicon*/
 body {
   font-family: "Lato", sans-serif;
 }
@@ -62,14 +96,14 @@ body {
   cursor: pointer;
   background-color: #111;
   color: white;
-  padding: 10px 15px;
+  padding: 5px 10px;
   border: none;
-  width: 70px;
+  width: 100%;
+  text-align: left;
 }
 
 .openbtn:hover {
   background-color: #444;
-
 }
 
 #main {
@@ -77,41 +111,28 @@ body {
   padding: 16px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
-</style>
-</head>
-<body>
+/*end*/
 
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-
-<div id="main">
-  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
-  
-</div>
-
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+/*scrollmenubar*/
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
 }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+} 
+
+div.scrollmenu a:hover {
+  background-color: #777;
 }
-</script>
-   
-
-
-</body>
-</html>
+/*end*/
