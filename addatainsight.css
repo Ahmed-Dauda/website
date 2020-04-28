@@ -1,18 +1,15 @@
-<<<<<<< HEAD
-=======
+
 /*first css*/
->>>>>>> feature
 body {
 	 background-color: grey;
  }
  .para1{ 
 color: red;
 font-style: italic;
-<<<<<<< HEAD
+
 }
-=======
-} 
->>>>>>> feature
+
+
 h1, .para1 {
 	color: orange;
 	font-weight: 900;
