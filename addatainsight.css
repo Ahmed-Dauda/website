@@ -1,7 +1,9 @@
-
 /*first css*/
+div#container{
+	width: 120%;
+}
 body {
-	 background-color: grey;
+	 background-color: white;
  }
  .para1{ 
 color: red;
@@ -51,7 +53,7 @@ div#menu {
 }
 #menu {
 	border:  5px  dotted black;
-	width: 90%
+	width: 110%;
 
 }
 
@@ -141,3 +143,17 @@ div.scrollmenu a:hover {
   background-color: #777;
 }
 /*end*/
+
+div#footers{
+	background-color: grey;
+	font-size: 20px;
+	width: 110%;
+}
+a.sig{
+	color: white;
+	text-align: center;
+}
+div#header{
+	background-color: grey;
+	width: 110%;
+}
