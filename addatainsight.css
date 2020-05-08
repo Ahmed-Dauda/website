@@ -53,7 +53,7 @@ div#menu {
 }
 #menu {
 	border:  5px  dotted black;
-	width: 80%;
+	width: 100%;
 
 }
 
@@ -147,7 +147,7 @@ div.scrollmenu a:hover {
 div#footers{
 	background-color: grey;
 	font-size: 20px;
-	width: 80%;
+	width: 100%;
 }
 a.sig{
 	color: white;
