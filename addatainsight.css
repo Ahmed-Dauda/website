@@ -1,6 +1,6 @@
 /*first css*/
 div#container{
-	width: 80%;
+	width: 100%;
 }
 body {
 	 background-color: white;
@@ -105,7 +105,7 @@ body {
   color: white;
   padding: 5px 10px;
   border: none;
-  width: 80%;
+  width: 10%;
   text-align: left;
 }
 
