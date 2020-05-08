@@ -1,7 +1,8 @@
 /*first css*/
 div#container{
+
 	width: 150%;
-	
+	 94c74f1a6bd27e148bc382fc52b5ba843c49f63c
 }
 body {
 	 background-color: white;
@@ -106,7 +107,7 @@ body {
   color: white;
   padding: 10px 10px;
   border: none;
-  width: 100%;
+  width: 10%;
   text-align: left;
 }
 
@@ -147,8 +148,10 @@ div.scrollmenu a:hover {
 
 div#footers{
 	background-color: grey;
+
 	font-size: 16px;
 	width: ;
+
 }
 a.sig{
 	color: white;
@@ -156,7 +159,7 @@ a.sig{
 }
 div#header{
 	background-color: grey;
-	
+
 	font-size: 20px;
 }
 div#main{
@@ -165,3 +168,5 @@ div#main{
 div#paragraph .para-link{
 	color: green;
 }
+	
+
