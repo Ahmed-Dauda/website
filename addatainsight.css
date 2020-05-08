@@ -107,7 +107,7 @@ body {
   color: white;
   padding: 10px 10px;
   border: none;
-  width: 10%;
+  width: 100%;
   text-align: left;
 }
 
@@ -169,4 +169,3 @@ div#paragraph .para-link{
 	color: green;
 }
 	
-
