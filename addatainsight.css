@@ -25,7 +25,7 @@ p.para2,  p.para3 {
 	text-indent: 1em;
 	padding-right: 1
 2	em
-	
+width:80%;
 }
 div#footers, a{
 	
@@ -62,6 +62,7 @@ div#menu {
 /*navigationmenuicon*/
 body {
   font-family: "Lato", sans-serif;
+  width:80%;
 }
 
 .sidebar {
@@ -155,7 +156,7 @@ a.sig{
 }
 div#header{
 	background-color: grey;
-	width: 100%;
+	width: 80%;
 	font-size: 22px;
 }
 div#main{
