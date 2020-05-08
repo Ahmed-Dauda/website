@@ -1,5 +1,6 @@
 /*first css*/
 div#container{
+
 	width: 150%;
 	
 }
@@ -63,32 +64,41 @@ div#menu {
 /*navigationmenuicon*/
 body {
   font-family: "Lato", sans-serif;
+  
+  
 }
 
+/*opening sidebar body*/
 .sidebar {
   height: 100%;
-  width: 0;
+  width: 0px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  
+  
+  
 }
 
+/*opening sidebar*/
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: black;
   display: block;
   transition: 0.3s;
+  font-size: 24px;
 }
 
 .sidebar a:hover {
   color: #f1f1f1;
+  
 }
 
 .sidebar .closebtn {
@@ -107,8 +117,8 @@ body {
   padding: 10px 10px;
   border: none;
   width: 100%;
-  text-align: left;
-}
+  text-align: right;
+} 
 
 .openbtn:hover {
   background-color: #444;
@@ -138,17 +148,21 @@ div.scrollmenu a {
   text-align: center;
   padding: 14px;
   text-decoration: none;
+  
 } 
 
 div.scrollmenu a:hover {
   background-color: #777;
+  
 }
 /*end*/
 
 div#footers{
 	background-color: grey;
+
 	font-size: 16px;
 	width: ;
+
 }
 a.sig{
 	color: white;
@@ -156,7 +170,7 @@ a.sig{
 }
 div#header{
 	background-color: grey;
-	
+
 	font-size: 20px;
 }
 div#main{
@@ -164,4 +178,4 @@ div#main{
 }
 div#paragraph .para-link{
 	color: green;
-}
+}	
