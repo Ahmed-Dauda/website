@@ -1,7 +1,8 @@
 /*first css*/
 div#container{
-
+margin: 10px 0px 0px 0px;
 	width: 150%;
+	
 	
 }
 body {
@@ -78,7 +79,7 @@ body {
   left: 0;
   background-color: white;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.2s;
   padding-top: 60px;
   
   
@@ -92,7 +93,7 @@ body {
   font-size: 25px;
   color: black;
   display: block;
-  transition: 0.3s;
+  transition: 0.1s;
   font-size: 24px;
 }
 
@@ -106,7 +107,7 @@ body {
   top: 0;
   right: 25px;
   font-size: 36px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 /*addatainsight icon*/
 .openbtn {
@@ -159,11 +160,17 @@ div.scrollmenu a:hover {
 
 div#footers{
 	background-color: grey;
-
-	font-size: 16px;
+  padding: 10px 10px 30px;
+  margin-left: 0px;
+	font-size: 30px;
+	text-align: center;
 	width: ;
 
 }
+ul {
+ list-style-type: none; 
+ }
+ 
 a.sig{
 	color: white;
 	text-align: center;
@@ -178,9 +185,18 @@ div#main{
 }
 div#paragraph .para-link{
 	color: green;
-<<<<<<< HEAD
+
 }
 	
-=======
-}	
->>>>>>> feature2
+/*big-button*/
+.click-me1{
+	width: 50px;
+	margin: 2px;
+}
+
+.click-but{
+  height: 150px;
+	width: 500px;
+	
+	
+}
