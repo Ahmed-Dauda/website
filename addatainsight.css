@@ -161,10 +161,10 @@ div.scrollmenu a:hover {
 div#footers{
 	background-color: grey;
   padding: 
-  margin: 
+  margin-left: 60px;  
 	font-size: 26px;
 	text-align: center;
-	width: 5px;
+	width-5px;
 
 }
 ul {
