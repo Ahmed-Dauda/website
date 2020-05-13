@@ -111,7 +111,7 @@ body {
 }
 /*addatainsight icon*/
 .openbtn {
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   background-color: Orange;
   color: white;
@@ -161,8 +161,8 @@ div.scrollmenu a:hover {
 div#footers{
 	background-color: grey;
   padding: 
-  margin-left: 60px;  
-	font-size: 26px;
+  margin-left: 99px;  
+	font-size: 22px;
 	text-align: center;
 	width-5px;
 
