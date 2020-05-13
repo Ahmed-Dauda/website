@@ -162,7 +162,7 @@ div#footers{
 	background-color: grey;
   padding:
   margin-left: 99px;  
-	font-size: 20px;
+	font-size: 16px;
 	text-align: center;
 	width: px;
 
@@ -178,7 +178,7 @@ a.sig{
 div#header{
 	background-color: grey;
 
-	font-size: 16px;
+	font-size: 14px;
 }
 div#main{
 	font-size: 14px;
