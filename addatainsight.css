@@ -172,6 +172,7 @@ ul {
  }
  
 a.sig{
+        background-color: #333;
 	color: white;
 	text-align: center;
 }
@@ -183,10 +184,6 @@ div#header{
 div#main{
 	font-size: 14px;
 }
-div#paragraph .para-link{
-	color: green;
 
-}
-	
 
 
