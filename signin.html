@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
  <html  >
 
@@ -12,10 +11,36 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <style>
-input type="submit" {
-width:100px;
-height:20px;
+input[type="submit" ]{
+background-color: green;
+width:300px;
+height:50px;
+color: white;
+
 }
+textarea[name="message" ]{
+width:300px;
+height:100px;
+text-align: center;
+
+}
+
+input[type="text" ]{
+width:300px;
+height:50px;
+text-align: center;
+}
+input[type="email" ]{
+width:300px;
+height:50px;
+text-align: center;
+}
+form {
+background-color: ;
+margin-left: 20px;
+margin-top: 20px;
+}
+
 </style>
 </head>
 <body>
@@ -30,16 +55,15 @@ height:20px;
   </label><br>
   <label>
     Your Email:<br>
-    <input type="email" name="_replyto">
+    <input type="email" name="_replyto" placeholder= "Enter Email">
   </label><br>
   <label>
     Message:<br>
-    <textarea name="message"></textarea><br>
-  </label>  <br><br>  
+    <textarea name="message" placeholder = "please type your message here..."></textarea><br>
+  </label>  <br>
 
-  <input type="submit" value="Send">
+  <input type="submit" value="Send" >
 </form>
-
 
 
 </body>
