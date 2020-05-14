@@ -59,6 +59,7 @@ div#menu {
 #menu {
 	border:  5px  dotted black;
 	width: 100%;
+	height: 2px;
 
 }
 
@@ -67,6 +68,7 @@ div#menu {
 /*navigationmenuicon*/
 body {
   font-family: "Lato", sans-serif;
+  height: px;
   
 }
 
@@ -117,6 +119,7 @@ body {
   padding: 10px 10px;
   border: none;
   width: 100%;
+  
   text-align: right;
 } 
 
@@ -145,14 +148,17 @@ div.scrollmenu {
 div.scrollmenu a {
   display: inline-block;
   color: white;
-  text-align: center;
+  text-align: top;
   padding: 14px;
   text-decoration: none;
+  font-size: 18px;
+  height: 8px;
   
 } 
 
 div.scrollmenu a:hover {
   background-color: #777;
+  
   
 }
 /*end*/
@@ -176,7 +182,7 @@ a.sig{
 }
 div#header{
 	background-color: #333;
-
+  
 	font-size: 14px;
 }
 
@@ -201,10 +207,11 @@ div#header{
 }
 
 
-button {
+.serv-button {
 background-color: orange;
-width: 250px;
+width: 100%;
 height: 35px;
 font-size:20px;
-margin-bottom: 30px;
+margin: 
+
 } 
