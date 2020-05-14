@@ -1,56 +1,39 @@
+
 <!DOCTYPE html>
- <html>
+ <html  >
+
  <head>
-	 <title>addatainsight</title>
-	 <meta name = "viewport"  content = "width = device-width" charset="UTF-8"/>
-	 <link rel="stylesheet" href="" type="text/css"/>
-	
-<style>
-input{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+ <title>addatainsight</title>
 
-input[type] {
-  width: 80%;
-  
-  background-color: white;
-  color: black;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: 2px solid orange;
-  border-radius: 4px;
-  cursor: pointer;
-}
+<meta name = "viewport"  content="width= device-width, initial-scale= 1.0">
 
-button {
-  background-color: green;
-  font-size: 20px;
-  color: white;
-}
-textarea {
-border: 2px solid orange;
-}
-	 </style>
- </head >
-	 <body >
-	
-<form action="//formspree.io/pmbsam2019@gmail.com" method="POST"  class="form1">
-	<label for ="email">Enter Email:</label><br>
-	<input name="email" type="email" placeholder = "enter email"></input>
-	<br>
-	<label for ="password">Enter Password:</label><br>
-	<input  name="password" type="password" placeholder = "enter password"></input>
-	<br><br>
+					 <link rel="stylesheet" href="addatainsight.css" type="text/css"/>
+<!---responsive page--->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+</head>
+<body>
+
+<form
+  action="https://formspree.io/pmbsam2019@gmail.com"
+  method="POST"
+>
+  <label>
+    Your Name:
+    <input type="text" name="name" placeholder="Enter your Name">
+  </label>
+  <label>
+    Your Email:
+    <input type="email" name="_replyto">
+  </label>
+  <label>
+    Message:
+    <textarea name="message"></textarea>
+  </label>
+  <input type="submit" value="Send">
 </form>
-	   
-<br><br>
-<button>Click Summit</button>
-	 </body>
- </html>
+
+
+
+</body>
+</html>
