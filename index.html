@@ -3,10 +3,31 @@
 
  <head>
 			 		 <title>addatainsight</title>
-<meta name = "viewport"  content="width= device-width" initial-scale= 1.0>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name = "viewport"  content="width= device-width, initial-scale= 1.0">
 
 					 <link rel="stylesheet" href="addatainsight.css" type="text/css"/>
+<!---responsive page--->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	 
+	 <style>
+		@media (min-width:992px) {
+		#aside {
+			width:250px;
+		}
+		pre { tab-size: 4;}
+		.btn {background-color:#FFD166;
+			  color:#000;
+		      height:auto;
+			  font-color:#000;
+			  }
+		.btn:hover {background-color:#FFD166;
+					}
+
+
+		</style>
+		
 					 <style>
 					 div#signin1 .sig{
 					 color:white;
@@ -19,6 +40,7 @@
 					 text-align: center;
 					 }
 					 </style>
+
  </head>
  
 	 <body >
@@ -29,19 +51,6 @@
 		 		
 		 							 					
 		 	<!--scrollmenu section-->
-<div class="scrollmenu">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="#custom">Custom</a>
-  <a href="#more">More</a>
-  <a href="#logo">Logo</a>
-  <a href="#friends">Friends</a>
-  <a href="#partners">Partners</a>
-  <a href="#people">People</a>
-  <a href="#work">Work</a>
-</div>
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -53,9 +62,28 @@
 
 	 				<!-- sign -->
 		 				<div  id="signin1">
-<a  href="signin.html"  class="sig">Sign In</a>
+<a  href="signin.html"  class="sig">Register</a>
 							</div>
 		 				<!--end-->
+ <style> 
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+</style>
+
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
 <div id="butt">
   <button class="openbtn" onclick="openNav()">Addatainsight ☰ </button>  
 </div>
@@ -82,56 +110,49 @@ function closeNav() {
    <!--ending header-->
    
 		 					<!--content section-->
-		 				<div  id="content">
-						<div  id="main">
+		 				<div  clasd="main">
+
+	<a href="services.html"><button  class="serv-button">my services</button></a>
+                                 <br><br>        
+			 			</div>
+
 		 			<!--paragraph section-->
-		 				<div  id="paragraph">
-		
-	
-		 			</div>
-		 			</div>
+	<div class=para style ="background-color: white;">
+                                        
+                  <h4><b>The Story</b></h4><br>
+   <img src ="images/data.jpg" width=100%, color:black;>
+      <h4>The story of success</h4>
 		 			
-		 			<div  class="click-me1">
-<button  class="click-but"><a  style="color:Orange; font-size: 30px;" href="data0.html" >Services Offer by AddataInsight</a></button>
-		 			</div>
 		 		
 		 			</div>
+		 			<br><br>
 		 			
-		 					 		<!-videos-->
-<h1 style="text-align:left">The video element</h1>
-
-<video width="40%" height="40⅝" controls>
-  <source src="videos/cssvideo.mp4" type="video/mp4">
-  <source src="videos/cssvideo.ogg" type="video/ogg">
-</video>
-		 							
-<div  id="video1">
-<iframe width="40%" height="40%" src="https://www.youtube.com/embed/kKAaz8EC048"></iframe>
-		 							</div>
-		 							<!--ending video-->
 		 							
 		 								
 		 				<!--ending main-->
 		 									
 		 						<!-footer-->
 		 								<div  id="footers">
-<h4  class="head4">Link Up With Me:</h4>
-		 								<ul> 
-		 								
-<li><a href="mailto:addatainsight@gmail.com"  class="ref6">Email</a></li>
-<li><a href=" https://twitter.com/ADatainsight"  class=" ref7">Twittet</a></li>
-<li><a href="https://www.facebook.com/addatainsight"  class=" ref8">Facebook</a></li>
-<li><a href="https://www.github.com/Ahmed-Dauda"  class ="ref10">Github</ a></li >
-<li><a href="https://www.youtube.com/channel/UCac5OLQGbM72xXvQ4XjrRjg"  class ="ref10">YouTube</ a></li >
-<li ><a  href= "number.html">phone number</ a></li >
-		 						</ul >
+	 					
+<p>link up with me:</p>		 								
+<a href="mailto:addatainsight@gmail.com"  class="ref6">Email</a><br>
+<a href=" https://twitter.com/ADatainsight"  class=" ref7">Twittet</a><br>
+<a href="https://www.facebook.com/addatainsight"  class=" ref8">Facebook</a><br>
+<a href="https://www.github.com/Ahmed-Dauda"  class ="ref10">Github</ a><br>
+<a href="https://www.youtube.com/channel/UCac5OLQGbM72xXvQ4XjrRjg"  class ="ref10">YouTube</ a><br>
+<a  href= "number.html">phone number</a>
+		 					
 		 							
-<h5  class="head5">legel stuff:</h5>
+<p  class="legal">legel stuff:</p>
 <p class="para4">Terms and Conditions</p>
 <p  class="para5">Privacy Policy</p>
+<p>@May 2, 2020</p>
 		 				</div>
-		 				<!--ending footer-->
+				<!--ending footer-->
 		 					
 		 </div>
 	 </body>
+
  </html>
+ 
+ 
