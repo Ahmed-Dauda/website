@@ -4,7 +4,7 @@ margin: 10px 0px 0px 0px;
 	width: 100%;
 	
 }
-
+ 
 body {
 	 background-color: white;
  }
@@ -112,11 +112,11 @@ body {
 }
 /*addatainsight icon*/
 .openbtn {
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
   background-color: Orange;
   color: white;
-  padding: 10px 10px;
+  padding: 1px 10px;
   border: none;
   width: 100%;
   
@@ -166,11 +166,11 @@ div.scrollmenu a:hover {
 div#footers{
   background-color: #333;
   
-  padding-button: 20px;
+  padding: 20px 20px 30px;
   font-size: 16px;
   text-align: left;
 	
-}
+} 
 ul {
  list-style-type: none; 
  }
