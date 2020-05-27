@@ -68,7 +68,7 @@ div#menu {
 /*navigationmenuicon*/
 body {
   font-family: "Lato", sans-serif;
-  height: px;
+  
   
 }
 
@@ -112,11 +112,11 @@ body {
 }
 /*addatainsight icon*/
 .openbtn {
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
-  background-color: tomato;
+  background-color: #333;
   color: white;
-  padding: 1px 0px;
+  padding: 10px 0px;
   border: none;
   width: 100%;
   
@@ -140,7 +140,7 @@ body {
 
 /*scrollmenubar*/
 div.scrollmenu {
-  background-color: #333;
+  background-color: grey;
   overflow: auto; 
   white-space: nowrap;
 } 
@@ -158,12 +158,13 @@ div.scrollmenu a {
 } 
 
 div.scrollmenu a:hover {
-  background-color: #777;
+  background-color: orange;
   
   
 }
 /*end*/
 
+/*footer*/
 div#footers{
   background-color: #333;
   
@@ -175,7 +176,7 @@ div#footers{
 ul {
  list-style-type: none; 
  }
- 
+ /*end*/
 a.sig{
        
 	color: white;
@@ -186,7 +187,7 @@ a.sig{
 
 
 div#header{
-	background-color: #333;
+	background-color: grey;
  
 	font-size: 14px;
 }
