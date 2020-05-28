@@ -8,7 +8,7 @@
 <style>
 * body{
   box-sizing: border-box;
-  background-color: #333;
+  background-color: white;
 }
 
 #myInput {
@@ -22,7 +22,9 @@
   margin-bottom: 12px;
 }
 button {
-width: 100%;
+width: 80%;
+height: 200px;
+margin: 0px 10% 0px 10%;
 }
 #myUL {
   list-style-type: none;
@@ -31,14 +33,13 @@ width: 100%;
 }
 
 #myUL li a {
-  border: 2px solid #333;
-
+ 
   margin-top: -1px; /* Prevent double borders */
   background-color: #f6f6f6;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
-  color: black;
+  color: blue;
   display: block;
   font-weight: bold;
   
@@ -50,7 +51,7 @@ width: 100%;
 <!--back to home-->
 .back-to-home, a{
 font-size: 18px;
-color: green;
+color: blue;
 }
 .back-to-home-para{
 color:white;
@@ -61,18 +62,19 @@ color:white;
 </head>
 <body>
 
-<button  class="back-to-home"><a href = "index.html">Back to Home</a></button>
-<h1  class="back-to-home-para">Lists of Data Science Tutorials</h1>
 
+<h1  style="color: black;">Lists of Data Science Tutorials</h1>
+<br>
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for name.." title="Type in a name">
 
 <ul id="myUL">
- <button> <li><a href="index_and_slicing.html">Tutorial on Index and Slicing in Python</a></li></button><br>
+ <button> <li><a href="index_and_slicing.html">Tutorial on Index and Slicing in Python</a></li></button><br><br>
  
-  <button><li><a href="lists.html">The Power of Lists  in Python <br> Part 1</a></li></button><br>
+  <button><li><a href="lists.html">The Power of Lists  in Python <br> Part 1</a></li></button><br><br>
  
-  <button><li><a href="while_loop.html">Python: The Beauty of While Loop.</a></li></button><br>
- <button> <li><a href="#">tuples</a></li></button>
+  <button><li><a href="while_loop.html">Python: The Beauty of While Loop.</a></li></button><br><br>
+  
+ <button> <li><a href="#">tuples</a></li></button><br><br>
 
 </ul>
 
@@ -94,6 +96,6 @@ function myFunction() {
     }
 }
 </script>
-
+<button  style="color: blue; width: 100px; height: 2%;""><a href = "index.html" >Back to Home</a></button><br><br>
 </body>
 </html>
