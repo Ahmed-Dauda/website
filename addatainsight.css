@@ -112,11 +112,11 @@ body {
 }
 /*addatainsight icon*/
 .openbtn {
-  font-size: 25px;
+  font-size: 30px;
   cursor: pointer;
-  background-color: #333;
+  background-color: darkblue;
   color: white;
-  padding: 10px 0px;
+  padding: 10px 10px;
   border: none;
   width: 100%;
   
@@ -140,7 +140,7 @@ body {
 
 /*scrollmenubar*/
 div.scrollmenu {
-  background-color: grey;
+  background-color: blue;
   overflow: auto; 
   white-space: nowrap;
 } 
@@ -187,7 +187,7 @@ a.sig{
 
 
 div#header{
-	background-color: grey;
+	background-color: blue;
  
 	font-size: 14px;
 }
