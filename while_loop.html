@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
-<title>index_and_slicing</title>
+<title>while_loop</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13083,11 +13083,10 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Indexing-and-Slicing">
 <style>
 body {
 font-family: sans-serif , Arial, 'Times New Roman';
-font-size: 25px;
+font-size: 35px;
 width: 100%;
 word-spacing: 3px;
 }
@@ -13095,18 +13094,18 @@ word-spacing: 3px;
 p {
 font-size: 18px;
 }
-h1, h2 {
-font-size: 30px;
+h2 {
+font-size: 23px;
 }
 </style>
-<h1>Indexing and Slicing</h1><a class="anchor-link" href="#Indexing-and-Slicing">&#182;</a></h1>
+<h1 id="PYTHON:-THE-BEAUTY-OF-WHILE-LOOP">PYTHON: THE BEAUTY OF WHILE LOOP<a class="anchor-link" href="#PYTHON:-THE-BEAUTY-OF-WHILE-LOOP">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>Tuesday May 19, 2020 by Ahmed Dauda AD</code></p>
+<p>Thurday May 28, 2020 by Ahmed Dauda AD</p>
 
 </div>
 </div>
@@ -13114,8 +13113,7 @@ font-size: 30px;
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><p>addatainsight</p>
-<img src="images/indexing.png"></p>
+<p><img src = "images/whileloop.jpg"></p>
 
 </div>
 </div>
@@ -13123,16 +13121,22 @@ font-size: 30px;
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h1><p>Indexing and Slicing data
-for an aspiring data scientist, 
-the ability to work with indexes  and know how to manipulate slicing is a needed skill in this century.</p>
-<p>Let's start by discussing  indexing, for example, 
-if you have DataFrame  or data in a spreadsheet  or collections of strings,  you have probably seen index. In DataFrame or spreadsheet, index is the position of data points in a row. In python, index numbers start from 0 to nth possible samples.</p>
-<p>In python, we have positive and negative Indexes. In this article, we will learn both.</p>
-<p>In complex analysis, like iteration of linear simultaneous equations and related analysis, the negative index will help you to loop over a repeated tasks which distinguished python from other programming languages.</p>
-<p>An index is an integer value representative the 1st, 2nd… to the nth item. 
-Then access the index in a string of words, let assign the strings in a well defined variable. 
-For instead:</p>
+<h2 id="INTRODUCTION">INTRODUCTION<a class="anchor-link" href="#INTRODUCTION">&#182;</a></h2><p>In practice of any programming language, at a certain point in time, there must be a need to perform repeatation of tasks over and over. Wait, can this be possible with python ? Yes it is, python is unexceptional, you can equally perform repeated tasks with while loop. There are two types f loops in python, for loop and while loop all are using for iteration purposes.
+In this tutorial, we will be discussing while loop and it application.</p>
+<p>While loop state that if a certain condition is true, keep on looping until the condition became false, then it break.
+The syntax for while loop is: 
+while (condition):
+    (action and exit)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Below, we will be considering a list of names.<br>
+for example: 
+name = ['monday', 'john', 'ahmed', 'dauda']</p>
 
 </div>
 </div>
@@ -13142,10 +13146,36 @@ For instead:</p>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;python programming&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;monday&#39;</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="s1">&#39;ahmed&#39;</span><span class="p">,</span> <span class="s1">&#39;dauda&#39;</span><span class="p">]</span>
+
+<span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="n">counter</span><span class="p">])</span>
+    <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>monday
+john
+ahmed
+dauda
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13153,7 +13183,26 @@ For instead:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The first letter of the <strong>name</strong> variable is p which is located at index 0. printing first char p will be name[0]</p>
+<h1 id="Explanation">Explanation<a class="anchor-link" href="#Explanation">&#182;</a></h1><p>Now, you can see that the counter is 0 which is used to compare with the length of the names which is 4, there are: "monday, ahmed, John, dauda". Provided that the counter is less than the length of the names, the program will keep on looping until otherwise, then the program will stop.</p>
+<p>The program tells, Since the counter is 0, and is less than 4, print the name with an index 0 and increment 1 to the counter to become 1 + 0 = 1, also compare to see if 1 is less than 4 repeatedly until the condition became false.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Break-Statement">Break Statement<a class="anchor-link" href="#Break-Statement">&#182;</a></h2><p>break is a suitable keyword in python that is used to stop while loop if a certain condition is reached with the combination of if statement otherwise, the program will keep on running to infinity.</p>
+<p>It often happening with newbies that are just starting writing programs with while loop.</p>
+<h2 id="Application-of-Break-in-While-Loop">Application of Break in While Loop<a class="anchor-link" href="#Application-of-Break-in-While-Loop">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Suppose you want to select names and stop if you reached ahmed's name.
+Below is the program to do that:</p>
 
 </div>
 </div>
@@ -13163,8 +13212,16 @@ For instead:</p>
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">first_char</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">first_char</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;monday&#39;</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="s1">&#39;ahmed&#39;</span><span class="p">,</span> <span class="s1">&#39;dauda&#39;</span><span class="p">]</span>
+
+<span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="n">counter</span><span class="p">])</span>    
+    <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">name</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;ahmed&#39;</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;I have found ahmed!&#39;</span><span class="p">)</span>
+        <span class="k">break</span> 
 </pre></div>
 
     </div>
@@ -13181,7 +13238,9 @@ For instead:</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>p
+<pre>monday
+john
+I have found ahmed!
 </pre>
 </div>
 </div>
@@ -13193,18 +13252,32 @@ For instead:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The second letter of the <strong>name</strong> variable is y which is located at index 1. printing the second char y will be name[1]</p>
+<p>Now you have seen, since the program located the name ahmed it alert the programmer that the name ahmed was found and the program breaks. This approach, is often more significant, and more efficient in handling while loop.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, let play a simple guessing game with while loop.
+We will write a program that will allow a user to guess 4 digits phone password; if the password is not equal to 1234, the program will prompt the user to try again the password is wrong repeatedly until he has guessed the password correctly.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">second_char</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">second_char</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">password</span> <span class="o">=</span> <span class="mi">1234</span>
+<span class="n">guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Guess my 4 digits password! :&quot;</span><span class="p">))</span>
+
+<span class="k">while</span> <span class="n">guess</span> <span class="o">!=</span> <span class="n">password</span><span class="p">:</span>
+    <span class="n">guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Wrong guessed. Please  try again!&quot;</span><span class="p">))</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You guessed it correctly!&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13220,10 +13293,7 @@ For instead:</p>
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>y
-</pre>
-</div>
+
 </div>
 
 </div>
@@ -13233,8 +13303,15 @@ For instead:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now let locate g in the name variable.</p>
-<p>The ten letter of the <strong>name</strong> variable is g which is located at index 9 from 0 . printing the nine char g will be name[10]</p>
+<p>Now as you can see, the person hasn't guessed phone password correctly, so the program will keep on repeating over and over until the correct password was guessed.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ok, now, let assume that that the person has guessed the password correctly.</p>
 
 </div>
 </div>
@@ -13244,8 +13321,13 @@ For instead:</p>
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nine_char</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nine_char</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">password</span> <span class="o">=</span> <span class="mi">1234</span>
+<span class="n">guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Guess my 4 digits password! :&quot;</span><span class="p">))</span>
+
+<span class="k">while</span> <span class="n">guess</span> <span class="o">!=</span> <span class="n">password</span><span class="p">:</span>
+    <span class="n">guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Wrong guessed. Please  try again!&quot;</span><span class="p">))</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You guessed it correctly!&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13261,63 +13343,8 @@ For instead:</p>
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>g
-</pre>
-</div>
-</div>
 
 </div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Negative-index">Negative index<a class="anchor-link" href="#Negative-index">&#182;</a></h1><p>Negative indexing is one of the powerful skill you must learn when practicing data science or python programming especially in repeated tasks with looping.</p>
-<p>Nagative index select char from behind. For instead:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;python programming&quot;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The negative indexing from the "name" variable start at index -1. 
-If you are interested in the last g in programming, you will access it by index name[-1]</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">last_char</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">last_char</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
 
 <div class="output_area">
 
@@ -13325,7 +13352,7 @@ If you are interested in the last g in programming, you will access it by index 
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>g
+<pre>You guessed it correctly!
 </pre>
 </div>
 </div>
@@ -13337,231 +13364,8 @@ If you are interested in the last g in programming, you will access it by index 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If you want to locate n, the second to the last char in programming, you access it by name[-2]</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">second_last_char</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">second_last_char</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>n
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Slicing">Slicing<a class="anchor-link" href="#Slicing">&#182;</a></h1><p>Not only can we get a value of a str using its index, but we can equally access the index by slicing from different range of values. Slicing is a common way to copy a portion of a collections of items.</p>
-<p>With slicing, a range of indices is considered. This range is a half opened range, meaning that it includes the start index, and not the end index.</p>
-<p>The syntax used for slicing is similar to that for indexing except it uses colon ' : ' with start and end points. for instead:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>To slice the word python from the "name" variable, we can access that using start, : and end. For instead:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;python programming&quot;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">python</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">python</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>python
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>it can also be access by:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">python</span> <span class="o">=</span> <span class="n">name</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">python</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>python
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>To slice the word programming from the "name" variable, we can access that using start, : and end. For instead:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">programming</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">programming</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre> programming
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also slice using negative indices.</p>
-<p>Ending with -1. For instead:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">programming</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">programming</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre> programmin
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>This select the word programming and exclude the last char.</p>
+<p>Now, you could notice the program breaks when the person guessed the password correctly. 
+Congratulations! You have now completed a simple basics tutorial on while loop.</p>
 <br>
 <!--home-button-->
   <button style="color: blue; "><a  href="https://ahmed-dauda.github.io/website/" style="font-size: 40px; color: blue;" >Home</a></button>
