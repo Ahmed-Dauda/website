@@ -5,101 +5,78 @@
 
 <!---responsive page--->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--end-->
+
 <style>
-* body{
-  box-sizing: border-box;
+body{
   background-color: white;
-}
-
-#myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
+  font-family: Arial;
   width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-button {
-width: 80%;
-height: 200px;
-margin: 0px 10% 0px 10%;
-}
-#myUL {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
-#myUL li a {
- 
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: blue;
-  display: block;
-  font-weight: bold;
-  
+/*top-design*/
+.top-design{
+background-color: rgb(29, 41, 81);
+width: 100%;
+height: 400px;
+color: white;
+text-align: top;
+}
+/*end*/
+
+/*tutorial-link*/
+.tutorial-link {
+      width: 80%;
+      height: 300px;
+      margin: 0px 10% 0px  10%;
+      color: rgb(29, 41, 81);
+}
+/*end*/
+
+/*head-tutorial*/
+h1{
+text-align: top;
+
 }
 
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
-<!--back to home-->
+/*back to home*/
 .back-to-home, a{
 font-size: 18px;
 color: blue;
 }
+
 .back-to-home-para{
 color:white;
 }
+/*end*/
 
-<!--end-->
 </style>
+
 </head>
 <body>
 
+ <button  class="top-design" >
+ <h1>Data Science Tutorials<hr>"Information is the oil of the 21st century, and analytics is the combustion engine”</h1>
+ </button><br>
+ 
+                 <!--harmon advert-->
 				<a href="https://client.harmonweb.com/aff.php?aff=5" target="_blank"><img src="https://harmonweb.com/images/aff/650800.jpeg"  width="100%"></a>
 				<br>
-<h1  style="color: black;">Lists of Data Science Tutorials</h1>
+				<!--end-->
+
 <br>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for name.." title="Type in a name">
 
-<ul id="myUL">
- <button> <li><a href="index_and_slicing.html">Tutorial on Index and Slicing in Python</a></li></button><br><br>
+ <button  class="tutorial-link"><a href="index_and_slicing.html">Tutorial on Index and Slicing in Python</a></button><br><br>
  
-  <button><li><a href="lists.html">The Power of Lists  in Python <br> Part 1</a></li></button><br><br>
+  <button class="tutorial-link"><a href="lists.html">The Power of Lists  in Python <br> Part 1</a></button><br><br>
  
-  <button><li><a href="while_loop.html">Python: The Beauty of While Loop.</a></li></button><br><br>
+<button class="tutorial-link"><a href="while_loop.html">Python: The Beauty of While Loop.</a></button><br><br>
   
-
-  <button><li><a href="for_loop.html">The Easy Way to Start with For Loop in Python.</a></li></button><br><br>
+ <button class="tutorial-link"><a href="for_loop.html">The Easy Way to Start with For Loop in Python.</a></button><br><br>
   
- <button> <li><a href="#">tuples</a></li></button><br><br>
+ <button class="tutorial-link"> <a href="#">tuples</a></button><br><br>
 
-</ul> 
 
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-</script>
-<button  style="color: blue; width: 100px; height: 2%;""><a href = "index.html" >Back to Home</a></button><br><br>
+<button ><a href = "index.html" >Back to Home</a></button><br><br>
 </body>
 </html>
