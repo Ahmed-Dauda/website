@@ -114,7 +114,7 @@ body {
 .openbtn {
   font-size: 30px;
   cursor: pointer;
-  background-color: darkblue;
+  background-color:  rgb(29, 41, 81);
   color: white;
   padding: 10px 10px;
   border: none;
@@ -140,7 +140,7 @@ body {
 
 /*scrollmenubar*/
 div.scrollmenu {
-  background-color: blue;
+  background-color: rgb(100, 41, 91);
   overflow: auto; 
   white-space: nowrap;
 } 
@@ -166,7 +166,7 @@ div.scrollmenu a:hover {
 
 /*footer*/
 div#footers{
-  background-color: #333;
+  background-color: rgb(29, 41, 81);
   
   padding: 20px 20px 30px;
   font-size: 16px;
@@ -187,7 +187,7 @@ a.sig{
 
 
 div#header{
-	background-color: blue;
+	background-color: rgb(29, 41, 81);
  
 	font-size: 14px;
 }
