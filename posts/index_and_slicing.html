@@ -1,31 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8" />
-
-<title>for_loop</title>
-
+<head>
 <meta name = "viewport"  content="width= device-width, initial-scale= 1.0">
 
-					 <link rel="stylesheet" href="addatainsight.css" type="text/css"/>
+<link rel="stylesheet" href="a" type="text/css"/>
 <!---responsive page--->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<title>index_and_slicing</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-<style>
-body {
 
-font-family: "sans-serif ", Arial, Times New Roman;
-font-size: 25px;
-width: 100%;
-word-spacing: 2px;
-}
-
-</style>
 
 <style type="text/css">
-
     /*!
 *
 * Twitter Bootstrap
@@ -13093,14 +13083,30 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="The-Easy-Way-to-Start-with-For-Loop-in-Python">The Easy Way to Start with For Loop in Python<a class="anchor-link" href="#The-Easy-Way-to-Start-with-For-Loop-in-Python">&#182;</a></h1>
+<h1 id="Indexing-and-Slicing">
+<style>
+body {
+font-family: sans-serif , Arial, 'Times New Roman';
+font-size: 25px;
+width: 100%;
+word-spacing: 3px;
+}
+
+p {
+font-size: 18px;
+}
+h1, h2 {
+font-size: 30px;
+}
+</style>
+<h1>Indexing and Slicing</h1><a class="anchor-link" href="#Indexing-and-Slicing">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2><i>May 31, 2020 <br> by Ahmed Dauda AD</i></h2>
+<p><code>Tuesday May 19, 2020 by Ahmed Dauda AD</code></p>
 
 </div>
 </div>
@@ -13108,8 +13114,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="images/loop1.png" width="100%"></p>
-<p>photp credit: Real-Python</p>
+<p><p>addatainsight</p>
+<img src="images/indexing.png"></p>
 
 </div>
 </div>
@@ -13117,23 +13123,26 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="INTRODUCTION">INTRODUCTION<a class="anchor-link" href="#INTRODUCTION">&#182;</a></h2><p>In python programming, it is a nice and awesome skill to play around with loops!.In this tutorial, am going to introduce you with step by step instructions on how to best use for loop to iterates over a collection. For loop, is one of the most used method in python. Almost 80% of the operations perform in python can be best handle by this method because of it efficiency.
-The most common operations used with for loop are :
-1). Iterating over collections,like integers or strings.
-2). Iterating over a range of numbers.
-3). It is equally used for filtering a selected items.</p>
-<p>Now, let start stepping hands in code.
-For example, the code below will give you a clear step to begin with for loop with range of integers:</p>
+<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h1><p>Indexing and Slicing data
+for an aspiring data scientist, 
+the ability to work with indexes  and know how to manipulate slicing is a needed skill in this century.</p>
+<p>Let's start by discussing  indexing, for example, 
+if you have DataFrame  or data in a spreadsheet  or collections of strings,  you have probably seen index. In DataFrame or spreadsheet, index is the position of data points in a row. In python, index numbers start from 0 to nth possible samples.</p>
+<p>In python, we have positive and negative Indexes. In this article, we will learn both.</p>
+<p>In complex analysis, like iteration of linear simultaneous equations and related analysis, the negative index will help you to loop over a repeated tasks which distinguished python from other programming languages.</p>
+<p>An index is an integer value representative the 1st, 2nd… to the nth item. 
+Then access the index in a string of words, let assign the strings in a well defined variable. 
+For instead:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">range</span><span class="p">(</span><span class="n">start</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">steps</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;python programming&quot;</span>
 </pre></div>
 
     </div>
@@ -13144,40 +13153,7 @@ For example, the code below will give you a clear step to begin with for loop wi
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, the code above shows a range and it properties.
-range, has a start, stop and step points of actions. The start point of a range by default is 0 and it could be provided a value of your choice. 
-For example:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>You see, by default it starts with 0 and ends with 9. 10, is not included because the last number is not always included in range.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, let check on another example on for loop's usage  with start, stop, and step values in range.
-for example:</p>
+<p>The first letter of the <strong>name</strong> variable is p which is located at index 0. printing first char p will be name[0]</p>
 
 </div>
 </div>
@@ -13187,8 +13163,8 @@ for example:</p>
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">first_char</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first_char</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13205,15 +13181,7 @@ for example:</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2
-4
-6
-8
-10
-12
-14
-16
-18
+<pre>p
 </pre>
 </div>
 </div>
@@ -13225,24 +13193,7 @@ for example:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, as you can see the above codes printed an integers with two steps values. I.e it jumping two two numbers and printed the next.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="For-Loop-with-List">For Loop with List<a class="anchor-link" href="#For-Loop-with-List">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>For now, let look at for loop with list of months.
-for example: 
-months = ["January", "February", "March ", "April ", "May"]</p>
+<p>The second letter of the <strong>name</strong> variable is y which is located at index 1. printing the second char y will be name[1]</p>
 
 </div>
 </div>
@@ -13252,10 +13203,8 @@ months = ["January", "February", "March ", "April ", "May"]</p>
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">months</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;January&quot;</span><span class="p">,</span> <span class="s2">&quot;February&quot;</span><span class="p">,</span> <span class="s2">&quot;March &quot;</span><span class="p">,</span> <span class="s2">&quot;April &quot;</span><span class="p">,</span> <span class="s2">&quot;May&quot;</span><span class="p">]</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">months</span><span class="p">)):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">months</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">second_char</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">second_char</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13272,11 +13221,7 @@ months = ["January", "February", "March ", "April ", "May"]</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>January
-February
-March 
-April 
-May
+<pre>y
 </pre>
 </div>
 </div>
@@ -13288,23 +13233,8 @@ May
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The example above has indicated an iteration of collections of strings in list. It printed the string name with index i starting from 0, which is January, 1 February and so on.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Backward-Range-with-For-Loop.">Backward Range with For Loop.<a class="anchor-link" href="#Backward-Range-with-For-Loop.">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The range can also count backwards. Simply have the start be a larger int value than the stop value and have the steps be -1 (or any valid negative number).</p>
-<p>For example:</p>
+<p>Now let locate g in the name variable.</p>
+<p>The ten letter of the <strong>name</strong> variable is g which is located at index 9 from 0 . printing the nine char g will be name[10]</p>
 
 </div>
 </div>
@@ -13314,8 +13244,8 @@ May
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nine_char</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nine_char</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13332,16 +13262,7 @@ May
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>10
-9
-8
-7
-6
-5
-4
-3
-2
-1
+<pre>g
 </pre>
 </div>
 </div>
@@ -13353,24 +13274,8 @@ May
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Note:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The -1, is responsible of reversing the range in ascending order.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="For-Loop-with-Integers-Values.">For Loop with Integers Values.<a class="anchor-link" href="#For-Loop-with-Integers-Values.">&#182;</a></h2><p>let’s talk about iterating through collections we’ve already seen before, namely str and list. Now, we will consider for loop with integer list.
-for example:</p>
+<h1 id="Negative-index">Negative index<a class="anchor-link" href="#Negative-index">&#182;</a></h1><p>Negative indexing is one of the powerful skill you must learn when practicing data science or python programming especially in repeated tasks with looping.</p>
+<p>Nagative index select char from behind. For instead:</p>
 
 </div>
 </div>
@@ -13380,77 +13285,19 @@ for example:</p>
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">int_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
-
-<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">int_list</span><span class="p">:</span>
-    <span class="n">num</span> <span class="o">*=</span> <span class="mi">2</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-	
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;python programming&quot;</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>0
-2
-4
-6
-8
-10
-12
-14
-16
-18
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The above code, has printed 2 times each number of the iterable list and the values became even. That method is easy way to print even numbers with python.
-for instance:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>First iteration:              num →  0     →  0
-Second iteration:             num →  1     →  2
-Third iteration:              num →  2     →  4
-Fourth iteration:             num →  3     →  6
-Fifth iteration:              num →  4     →  8
-Sixth iteration:              num →  5     →  10
-Seventh iteration:            num →  6     →  12
-Eighth iteration:             num →  7     →  14
-Ninth iteration:              num →  8     →  16
-Tenth (last) iteration:       num →  9     →  18</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Condition-in-for-loop.">Condition in for loop.<a class="anchor-link" href="#Condition-in-for-loop.">&#182;</a></h2><p>The code below will teach you how to use condition in for loop.
-For example:</p>
+<p>The negative indexing from the "name" variable start at index -1. 
+If you are interested in the last g in programming, you will access it by index name[-1]</p>
 
 </div>
 </div>
@@ -13460,15 +13307,8 @@ For example:</p>
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">int_list</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
-
-<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">int_list</span><span class="p">:</span>
-    
-    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;The number is even &quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;The number is odd&quot;</span><span class="p">)</span>
-	
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">last_char</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">last_char</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13485,15 +13325,7 @@ For example:</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1 The number is odd
-2 The number is even 
-3 The number is odd
-4 The number is even 
-5 The number is odd
-6 The number is even 
-7 The number is odd
-8 The number is even 
-9 The number is odd
+<pre>g
 </pre>
 </div>
 </div>
@@ -13505,16 +13337,7 @@ For example:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The code above demonstrated how to print even and odd numbers with for loop and conditional statement.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Styling-with-For-Loop.">Styling with For Loop.<a class="anchor-link" href="#Styling-with-For-Loop.">&#182;</a></h2><p>The code below will teach you how to do styling with for loop.
-for example:</p>
+<p>If you want to locate n, the second to the last char in programming, you access it by name[-2]</p>
 
 </div>
 </div>
@@ -13524,8 +13347,8 @@ for example:</p>
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;**&quot;</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">second_last_char</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">second_last_char</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13542,16 +13365,7 @@ for example:</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>********************
-********************
-********************
-********************
-********************
-********************
-********************
-********************
-********************
-********************
+<pre>n
 </pre>
 </div>
 </div>
@@ -13563,10 +13377,17 @@ for example:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Nested-for-loops.">Nested for loops.<a class="anchor-link" href="#Nested-for-loops.">&#182;</a></h2><p>We can also use for loops to iterate through a nested list. As you might have guessed, to iterate through each value in a nested list, we will need to have nested for loops, which are for loops inside another for loop.
-The codes below show how you can use for loop with nested list. 
-Nested list is simply a list inside another list.
-For example:</p>
+<h1 id="Slicing">Slicing<a class="anchor-link" href="#Slicing">&#182;</a></h1><p>Not only can we get a value of a str using its index, but we can equally access the index by slicing from different range of values. Slicing is a common way to copy a portion of a collections of items.</p>
+<p>With slicing, a range of indices is considered. This range is a half opened range, meaning that it includes the start index, and not the end index.</p>
+<p>The syntax used for slicing is similar to that for indexing except it uses colon ' : ' with start and end points. for instead:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To slice the word python from the "name" variable, we can access that using start, : and end. For instead:</p>
 
 </div>
 </div>
@@ -13576,11 +13397,21 @@ For example:</p>
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nested_list</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">],</span> <span class="p">[</span><span class="mf">10.5</span><span class="p">,</span> <span class="mf">22.4</span><span class="p">]]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;python programming&quot;</span>
+</pre></div>
 
-<span class="k">for</span> <span class="n">lst</span> <span class="ow">in</span> <span class="n">nested_list</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">python</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">python</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13597,13 +13428,7 @@ For example:</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1
-2
-3
-a
-b
-10.5
-22.4
+<pre>python
 </pre>
 </div>
 </div>
@@ -13615,46 +13440,39 @@ b
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Note:">Note:<a class="anchor-link" href="#Note:">&#182;</a></h2><p>In iterating over a nested list, your first iteration will print the first list and the second will print the values of the lists.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="List-Comprehension-with-For-Loop.">List Comprehension with For Loop.<a class="anchor-link" href="#List-Comprehension-with-For-Loop.">&#182;</a></h2><p>By combining the for loop and if statement with the in operator, we can use Python’s comprehension syntax.
-The code below, demonstrated that:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>[value for value in collection if (condition)]</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>For example:</p>
+<p>it can also be access by:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">int_list</span> <span class="o">=</span> <span class="p">[</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">int_list</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">python</span> <span class="o">=</span> <span class="n">name</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">python</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>python
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13662,94 +13480,80 @@ The code below, demonstrated that:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Second way to achieve the same tasks using list append method.</p>
+<p>To slice the word programming from the "name" variable, we can access that using start, : and end. For instead:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">int_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="n">int_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">int_list</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">programming</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">programming</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> programming
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>From the above method, while iterating the result was collecting and stored in an empty list, into_list</p>
+</div>
 
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The codes below is using list comprehesion with for loop.
-for example:</p>
+<p>We can also slice using negative indices.</p>
+<p>Ending with -1. For instead:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">int_list</span> <span class="o">=</span> <span class="p">[</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">int_list</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">programming</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">programming</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>This is another method to find the squares of numbers in the list using the list comprehension.</p>
+<div class="output_wrapper">
+<div class="output">
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Substitution-with-For-Loop-using-list-comprehension-approach.">Substitution with For Loop using list comprehension approach.<a class="anchor-link" href="#Substitution-with-For-Loop-using-list-comprehension-approach.">&#182;</a></h2><p>List comprehension, which is uses for loop method to execute action, is another sufficient way of values substitution in formula.
-for instance, let look at simple interest formula:
-S = PRT/100
-For example: 
-if P =200
-R = 5
-T = 1,2,3,4,5,6,7,8,9
-that can be substituted for each value. For instance, when T = 1 what is S, when T = 2, what is S and so on.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">P</span> <span class="o">=</span> <span class="mi">200</span>
-<span class="n">R</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="output_area">
 
-<span class="n">S</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">P</span><span class="o">*</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span> <span class="k">for</span> <span class="n">T</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">S</span><span class="p">)</span>
-</pre></div>
+    <div class="prompt"></div>
 
-    </div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> programmin
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13757,19 +13561,12 @@ that can be substituted for each value. For instance, when T = 1 what is S, when
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Th above example is an example of simple interest,  S, with P=200, R= 5 and T = 1-9.
-we substituted T = 1 and obtained S, T = 2 and obtained S continuously.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Congratulations! You have completed the basics of for loop in python.</p>
-
+<p>This select the word programming and exclude the last char.</p>
 <br>
-  <button style="background-color: whit; "><a  href="https://ahmed-dauda.github.io/website/" style="font-size: 20px; color: blue;" >Home</a></button>
+<!--home-button-->
+  <button style="color: blue; "><a  href="https://ahmed-dauda.github.io/website/" style="font-size: 40px; color: blue;" >Home</a></button>
+<!--end-->
+
 </div>
 </div>
 </div>
