@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport"  content="width=device-width, initial-scale=1" charset="utf-8" />
 
-<title>lists</title>
+<title>set</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -28,13 +28,8 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-
-font-family: "sans-serif ", Arial, Times New Roman;
-font-size: 35px;
-width: 100%;
-word-spacing: 10px;
+  margin: 0;
 }
-
 article,
 aside,
 details,
@@ -13083,31 +13078,26 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+
 <style>
 body {
-font-family: sans-serif , Arial, 'Times New Roman';
+font-family: "sans-serif ", Arial, Times New Roman;
 font-size: 35px;
 width: 100%;
-word-spacing: 3px;
+word-spacing: 2px;
 }
-
-.da-button {
-background-color: #333;
-color: white;
-width: 100%;
-height: 110px;
-
-}
-p {
+p{
 font-size: 18px;
 }
-h2 {
-font-size: 23px;
-}
 </style>
-
-<h1><button  class="da-button">The Power of List in Python<br><br> Part 1
-</button></h1>
+<h1 id="Understanding-Sets-in-Python">Understanding Sets in Python<a class="anchor-link" href="#Understanding-Sets-in-Python">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>June 10, 2020 by<br> Ahmed Dauda AD</h2>
 
 </div>
 </div>
@@ -13115,7 +13105,7 @@ font-size: 23px;
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Wednesday May 22, 2020 by Ahmed Dauda AD</p>
+<p><img src="images/set2.jpg" width="100%" height ="200"></p>
 
 </div>
 </div>
@@ -13123,9 +13113,11 @@ font-size: 23px;
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-
-<p><img src= "images/images.jpeg" width = 600px;></p>
-
+<h2 id="INTRODUCTION">INTRODUCTION<a class="anchor-link" href="#INTRODUCTION">&#182;</a></h2><p>Set can be used in python to achieve unique tasks. It can come in handy when you want to remove repeatation in a collections. They are similar to a list and tuple, but differs as it values are unique and unordered. Set, is represented with curly brackets {}.
+Many find it difficult to distinguish between set and dictionary. Dictionary, has key(s) and value (s) and it represented with curly brackets, while set, has no key (s) this is what distinguished set from dictionary.The<br>
+common ways to represent set is as follow:<br>
+1). norset = {'a',2,'c'}<br>
+2). norset = set()</p>
 
 </div>
 </div>
@@ -13133,25 +13125,22 @@ font-size: 23px;
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Introduction"><button  class="da-button">Introduction</button><a class="anchor-link" href="#Introduction">&#182;</a></h2>
+<p>There are various methods associated with sets. In this tutorial, we will discuss the various methods of sets.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>List, is one of the most common and the most powerful means of storing data in python. It allows you to store different data types at the same list in the same time. On like others programming languages like Java/C++ which only allowed statically data types as values of entries in a list. In python, assigning variables doesn't required data types declaration. It dynamically assigned.</p>
-<p>Instance of handling individual data points, it's suitable and better to store your data in a list format.</p>
-<h2 id="Advantages-of-Storing-Data-in-a-List"><button  class="da-button">Advantages of Storing Data in a List</button><a class="anchor-link" href="#Advantages-of-Storing-Data-in-a-List">&#182;</a></h2><p>For an inspiring data scientist, in one way or the other, you need to work with lists of different data types.The following are some advantages of list:</p>
-<ul>
-<li>It very easy to store a data of different types. Like integers, strings , floats, Boolean etc.</li>
-<li>It has different methods of playing with data. Therefore, it ease in data manipulation.</li>
-<li>It can easily work with loops and so on.</li>
-</ul>
-<h2 id="list-Representation"><button  class="da-button">list Representation</button><a class="anchor-link" href="#list-Representation">&#182;</a></h2><p>List can be represented in python in the following ways: even_number = [2,4,6,8,10,...] 
-Or even_number =list(2,4,6,8,10,...).</p>
-<p>A list can be empty and is represented as []</p>
-<h2 id="Indexing-and-Slicing-with-list."><button  class="da-button">Indexing and Slicing with list.</button><a class="anchor-link" href="#Indexing-and-Slicing-with-list.">&#182;</a></h2><p>examples of indexing:</p>
+<h2 id="Add-Method">Add Method<a class="anchor-link" href="#Add-Method">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following examples will demostrate how to use Add Method.</p>
 
 </div>
 </div>
@@ -13161,20 +13150,11 @@ Or even_number =list(2,4,6,8,10,...).</p>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">even_number</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">even_number</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">norset</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="n">norset</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">norset</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="n">norset</span><span class="o">.</span><span class="n">add</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">norset</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13191,7 +13171,7 @@ Or even_number =list(2,4,6,8,10,...).</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2
+<pre>{8, (1, 6, &#39;d&#39;), 7}
 </pre>
 </div>
 </div>
@@ -13203,7 +13183,73 @@ Or even_number =list(2,4,6,8,10,...).</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>even number 2 has index 0, and it's accessed by it index</p>
+<p>Notice that empty set is declared as set(), which was populated with various values of different data types. The above codes show how elements or tuples are added to the set.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Note: It is impossible to add lists to a set; it will prompt an error message.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="How-to-Remove-Duplicate-in-a-Set.">How to Remove Duplicate in a Set.<a class="anchor-link" href="#How-to-Remove-Duplicate-in-a-Set.">&#182;</a></h2><p>Example:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">norset</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">norset</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;a&#39;, 2, &#39;b&#39;}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice that the repeated values inside the set is eliminated as you can see in case of 2. This is one of the most valuable ways of application of set in real life.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Remove-Method.">Remove Method.<a class="anchor-link" href="#Remove-Method.">&#182;</a></h2><p>Like with list, we can also remove an item by value. To do so, we use the remove method.</p>
+<p>The method signature is remove(value), where value may be of any data type.
+For Example:</p>
 
 </div>
 </div>
@@ -13213,7 +13259,11 @@ Or even_number =list(2,4,6,8,10,...).</p>
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">even_number</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">norset</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">norset</span><span class="p">)</span>
+
+<span class="n">norset</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">norset</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13230,7 +13280,8 @@ Or even_number =list(2,4,6,8,10,...).</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>4
+<pre>{&#39;a&#39;, 2, 3, 1, &#39;b&#39;}
+{&#39;a&#39;, 2, 3, &#39;b&#39;}
 </pre>
 </div>
 </div>
@@ -13242,7 +13293,7 @@ Or even_number =list(2,4,6,8,10,...).</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>even number 4 has index 1, and it's accessed by it index</p>
+<p>Notice that the remove method pointed exactly to 1 and is removed.</p>
 
 </div>
 </div>
@@ -13250,8 +13301,17 @@ Or even_number =list(2,4,6,8,10,...).</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Negative-Indexing"><button  class="da-button">Negative Indexing</button><a class="anchor-link" href="#Negative-Indexing">&#182;</a></h1><p>list, also has negative index</p>
+<h2 id="Difference-Between-Remove-and-Discard-Method-in-Set.">Difference Between Remove and Discard Method in Set.<a class="anchor-link" href="#Difference-Between-Remove-and-Discard-Method-in-Set.">&#182;</a></h2><p>With remove method, if value of the remove method is not in the index, it raises KeyError. Unlike Discard method which raises no error.
+let see how discard method works!
+For Example:</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Discard-Method">Discard Method<a class="anchor-link" href="#Discard-Method">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13260,7 +13320,11 @@ Or even_number =list(2,4,6,8,10,...).</p>
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">even_number</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">norset</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">norset</span><span class="p">)</span>
+
+<span class="n">norset</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;This is the discard method: </span><span class="si">{</span><span class="n">norset</span><span class="si">}</span><span class="s2"> &quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13277,7 +13341,8 @@ Or even_number =list(2,4,6,8,10,...).</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>10
+<pre>{&#39;a&#39;, 2, 3, 1, &#39;b&#39;}
+This is the discard method: {&#39;a&#39;, 2, 3, 1, &#39;b&#39;} 
 </pre>
 </div>
 </div>
@@ -13289,25 +13354,8 @@ Or even_number =list(2,4,6,8,10,...).</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>even number 10 has index 4, and it's accessed by it index. But now, it accessed by negative index -1</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="List's-Methods"><button  class="da-button">List's Methods</button><a class="anchor-link" href="#List's-Methods">&#182;</a></h2><p>Due to the flexibility of list, it has various methods that enable easy manipulation.</p>
-<p>In this tutorial, we are going to consider some relevant methods.
-for instance:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Append"><button  class="da-button">Append</button><a class="anchor-link" href="#Append">&#182;</a></h2><p>append add value(s) to the end of the list. For example:</p>
+<h2 id="Pop-Method.">Pop Method.<a class="anchor-link" href="#Pop-Method.">&#182;</a></h2><p>The set also has a pop method which removes and returns a value from the set; however, unlike a list pop method, a set pop method removes a value from the collection randomly.
+For Example:</p>
 
 </div>
 </div>
@@ -13317,10 +13365,32 @@ for instance:</p>
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">even_number</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">norset</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">norset</span><span class="p">)</span>
+<span class="n">norset</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;with pop method: </span><span class="si">{</span><span class="n">norset</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;a&#39;, 2, 3, 1, &#39;b&#39;}
+with pop method: {2, 3, 1, &#39;b&#39;}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13328,7 +13398,16 @@ for instance:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To add 1 to the end of the list, we do this:</p>
+<p>Notice that the first element or value was removed unlike pop method in list that remove the last elemeent. This happened because set is unordered</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Copy-Method.">Copy Method.<a class="anchor-link" href="#Copy-Method.">&#182;</a></h2><p>To create a copy, we can simply use the copy method similar to list method.
+For Example:</p>
 
 </div>
 </div>
@@ -13338,8 +13417,10 @@ for instance:</p>
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">even_number</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">even_number</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">norset</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">}</span>
+<span class="n">norset_copy</span> <span class="o">=</span> <span class="n">norset</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Original: </span><span class="si">{</span><span class="n">norset</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The copy values: </span><span class="si">{</span><span class="n">norset_copy</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13356,7 +13437,8 @@ for instance:</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[2, 4, 6, 8, 10, 1]
+<pre>Original: {&#39;a&#39;, 2, 3, 1, &#39;b&#39;}
+The copy values: {&#39;a&#39;, 2, 3, 1, &#39;b&#39;}
 </pre>
 </div>
 </div>
@@ -13368,8 +13450,7 @@ for instance:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Insert"><button  class="da-button">Insert</button><a class="anchor-link" href="#Insert">&#182;</a></h2><p>insert add value(s) to the position of index of the list.Therefore, it works with index position, and value. even_number.insert(index, value)</p>
-<p>For example:</p>
+<h2 id="Clear-Method.">Clear Method.<a class="anchor-link" href="#Clear-Method.">&#182;</a></h2><p>However, calling the clear method will clear the set, just like it would in a lists. For Example:</p>
 
 </div>
 </div>
@@ -13379,8 +13460,10 @@ for instance:</p>
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">even_number</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">even_number</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">norset</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Original: </span><span class="si">{</span><span class="n">norset</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">norset_clear</span> <span class="o">=</span> <span class="n">norset</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The cleared values: </span><span class="si">{</span><span class="n">norset_clear</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13397,7 +13480,8 @@ for instance:</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[11, 2, 4, 6, 8, 10, 1]
+<pre>Original: {&#39;a&#39;, 2, 3, 1, &#39;b&#39;}
+The cleared values: None
 </pre>
 </div>
 </div>
@@ -13409,774 +13493,16 @@ for instance:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The above code insert 11 in index position 0.</p>
+<p>Congratulations! You have just concluded simple tutorial on sets.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Remove"><button  class="da-button">Remove</button><a class="anchor-link" href="#Remove">&#182;</a></h2><p>remove eliminate specific value in the list.Therefore, it works with not index.It just eliminate the specified value of the list.</p>
-<p>even_number.remove(value)</p>
-<p>For example:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">even_number</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">even_number</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[2, 4, 6, 8, 10, 1]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>value 11 has been removed</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Pop"><button class="da-button">Pop</button><a class="anchor-link" href="#Pop">&#182;</a></h2><p>pop eliminate value at the end of the list.Therefore,  even_number.pop()</p>
-<p>For example:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">even_number</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">even_number</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[2, 4, 6, 8, 10]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>As you can see, 1 at the back of the list has been removed</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Count"><button  class="da-button">Count</button><a class="anchor-link" href="#Count">&#182;</a></h2><p>count a specified value of the list.Therefore,  even_number.count(10)</p>
-<p>For example:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">even_number</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>I added another 10 at the back of the list</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ten</span> <span class="o">=</span> <span class="n">even_number</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ten</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>the number 10 was counted twice from the list</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Index"><button  class="da-button">Index</button><a class="anchor-link" href="#Index">&#182;</a></h2><p>A specified index of the vakue of a list can be obtained .Therefore,  even_number.index(2)
-For example:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">even_number</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[12]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>As you can see, the index of even number 2 is 0.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Sort"><button  class="da-button">Sort</button><a class="anchor-link" href="#Sort">&#182;</a></h2><p>To Sort, is to arrange the  value of a list in either ascending or descending order.Therefore,  even_number.sort()
-For example:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Let assume our even numbers are unordered list
-Eg: even_number = [10, 6, 4, 8, 2, 10]. Let play around with sort method</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">even_number</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">even_number</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[2, 4, 6, 8, 10, 10]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Woo! As you can see, our values have been sorted.
-congratulations!</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Reverse"><button  class="da-button">Reverse</button><a class="anchor-link" href="#Reverse">&#182;</a></h2><p>To reverse a list, is to arrange the list in the opposite order of the sorted values. 
-For example:
-even_number.reverse()</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">even_number</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">even_number</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[10, 10, 8, 6, 4, 2]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>As you can see, the numbers are now arranged in descending order.
-congratulations! You have reversed a list.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Note:
-All the above processes can also be done with strings or letters.
-for example: 
-names = ['John', 'Dauda', 'Ahmed', 'Musa']
-names.sort()</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;Dauda&#39;</span><span class="p">,</span> <span class="s1">&#39;Ahmed&#39;</span><span class="p">,</span> <span class="s1">&#39;Musa&#39;</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;Ahmed&#39;, &#39;Dauda&#39;, &#39;John&#39;, &#39;Musa&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, you see, it also work with string data type. The names were sorted alphabetically.
-congratulations!</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Concatenation"><button  class="da-button">Concatenation</button><a class="anchor-link" href="#Concatenation">&#182;</a></h2><p>To concatenate lists, it simply means to join the lists together.
-for example:</p>
-<p>first = [1, 2, "a", "b"]</p>
-<p>second = ["hello", 5]</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">first</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">]</span>
-<span class="n">second</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="n">first</span> <span class="o">+=</span> <span class="n">second</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">first</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1, 2, &#39;a&#39;, &#39;b&#39;, &#39;hello&#39;, 5]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Extend-Method"><button  class="da-button">Extend's Method</button><a class="anchor-link" href="#Extend-Method">&#182;</a></h2><p>extend method performs the same operation as +=operator. It add lists together.
-for example:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">first</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">]</span>
-<span class="n">second</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="n">first</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">second</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">first</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1, 2, &#39;a&#39;, &#39;b&#39;, &#39;hello&#39;, 5]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>you have seen, the two lists was added together to form one. That is how extend works.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Multiplication-of-a-List"><button  class="da-button">Multiplication of a List</button><a class="anchor-link" href="#Multiplication-of-a-List">&#182;</a></h2><p>A list can be multiple by an integer.
-for example:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ahmed&#39;</span><span class="p">,</span> <span class="s1">&#39;dauda&#39;</span><span class="p">]</span>
-<span class="n">times</span> <span class="o">=</span> <span class="n">names</span> <span class="o">*</span> <span class="mi">3</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">times</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;ahmed&#39;, &#39;dauda&#39;, &#39;ahmed&#39;, &#39;dauda&#39;, &#39;ahmed&#39;, &#39;dauda&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Mutation"><button  class="da-button">Mutation</button><a class="anchor-link" href="#Mutation">&#182;</a></h2><p>Mutation is a process of assigning new value to a list. List is mutable which means it values can be changed.
-for example:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ahmed&#39;</span><span class="p">,</span> <span class="s1">&#39;dauda&#39;</span><span class="p">]</span>
-<span class="n">names</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;John&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;John&#39;, &#39;dauda&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>now, the name ahmed was changed to John. 0 is the index of the name ahmed.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Copy"><button  class="da-button">Copy</button><a class="anchor-link" href="#Copy">&#182;</a></h2><p>Copy is another way of creating instance of another object.</p>
-<p>for example:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ahmed&#39;</span><span class="p">,</span> <span class="s1">&#39;dauda&#39;</span><span class="p">]</span>
-<span class="n">names2</span> <span class="o">=</span> <span class="n">names</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">names2</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;ahmed&#39;, &#39;dauda&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Now you see, names2 has the copy as names.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Nested-lists"><button  class="da-button">Nested lists</button><a class="anchor-link" href="#Nested-lists">&#182;</a></h2><p>A list inside a list is called a nested list. Just like how an if statement inside an if statement is a nested if statement.</p>
-<p>Here is an example of a nested list:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nested_list</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="nested-list">nested list<a class="anchor-link" href="#nested-list">&#182;</a></h2><p>nested list, can be access the way we access normal list, except the zero index will return the first list of the nested list not a single value.</p>
-<p>For example:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">first</span> <span class="o">=</span> <span class="n">nested_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">first</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[2, 4, 12]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>you see, the first list is pop up.</p>
-<p>Now, let access the second list within the nested list</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">first</span> <span class="o">=</span> <span class="n">nested_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">first</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[9, 2, 5]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The second list was access with index 1 .</p>
-<h2 id="Congratulations!-You-have-concluded-your-part-1-tutorial-on-:-&quot;The-power-of-List&quot;"><b>Congratulations! You have concluded your part 1 tutorial on : "The power of List in Python"<a class="anchor-link" href="#Congratulations!-You-have-concluded-your-part-1-tutorial-on-:-&quot;The-power-of-List&quot;"><b>&#182;</a></h2>
 </div>
 </div>
 </div>
     </div>
   </div>
-  <button style="background-color: green; "><a  href="https://ahmed-dauda.github.io/website/" style="font-size: 50px; color: white;" >Home</a></button>
 </body>
 
  
- 
+
 
 </html>
