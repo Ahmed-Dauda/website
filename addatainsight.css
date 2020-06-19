@@ -1,7 +1,7 @@
 /*first css*/
 
-body,h1,h2,h3,h4,h5,h6 {
-wididth: 100%;
+body{
+width: 100%;
 font-family: "Lato", Times New Roman, sans-serif;
 }
 
@@ -9,7 +9,8 @@ body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
- 
+	
+}
  .para1{ 
 color: red;
 font-style: italic;
@@ -248,12 +249,15 @@ div p {
 .box a {
 	padding-left: 30%;
 }
-   /*================================================== * Effect 1 * ===============================================*/ 
+   
+   
   .effect1{ 
   -webkit-box-shadow: 0 10px 6px -6px #777; 
   -moz-box-shadow: 0 10px 6px -6px #777; box-shadow: 0 10px 6px -6px #777;
    } 
-   /*================================================== * Effect 2 * ===============================================*/ .effect2 { 
+   /*================================================== * Effect 2 * ===============================================*/
+ 
+  .effect2 { 
  position: relative; } 
  .effect2:before,
   .effect2:after {
@@ -271,4 +275,14 @@ div p {
        -ms-transform: rotate(-3deg); transform: rotate(-3deg); } .effect2:after {
         -webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -o-transform: rotate(3deg); -ms-transform: rotate(3deg); transform: rotate(3deg); right: 10px; left: auto; } /*================================================== * Effect 3 * ===============================================*/
  .effect3 { position: relative; } 
- .effect3:before { z-index: -1; position: absolute; content: ""; bottom: 15px; left: 10px; width: 50%; top: 80%; max-width:300px; background: #777; -webkit-box-shadow: 0 15px 10px #777; -moz-box-shadow: 0 15px 10px #777; box-shadow: 0 15px 10px #777; -webkit-transform: rotate(-3deg); -moz-transform: rotate(-3deg); -o-transform: rotate(-3deg); -ms-transform: rotate(-3deg); transform: rotate(-3deg); } /*================================================== * Effect 4 * ===============================================*/ .effect4 { position: relative; } .effect4:after { z-index: -1; position: absolute; content: ""; bottom: 15px; right: 10px; left: auto; width: 50%; top: 80%; max-width:300px; background: #777; -webkit-box-shadow: 0 15px 10px #777; -moz-box-shadow: 0 15px 10px #777; box-shadow: 0 15px 10px #777; -webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -o-transform: rotate(3deg); -ms-transform: rotate(3deg); transform: rotate(3deg); } /*================================================== * Effect 5 * ===============================================*/ .effect5 { position: relative; } .effect5:before, .effect5:after { z-index: -1; position: absolute; content: ""; bottom: 25px; left: 10px; width: 50%; top: 80%; max-width:300px; background: #777; -webkit-box-shadow: 0 35px 20px #777; -moz-box-shadow: 0 35px 20px #777; box-shadow: 0 35px 20px #777; -webkit-transform: rotate(-8deg); -moz-transform: rotate(-8deg); -o-transform: rotate(-8deg); -ms-transform: rotate(-8deg); transform: rotate(-8deg); } .effect5:after { -webkit-transform: rotate(8deg); -moz-transform: rotate(8deg); -o-transform: rotate(8deg); -ms-transform: rotate(8deg); transform: rotate(8deg); right: 10px; left: auto; } 
+ .effect3:before { z-index: -1; position: absolute; content: ""; bottom: 15px; left: 10px; width: 50%; top: 80%; max-width:300px; background: #777; -webkit-box-shadow: 0 15px 10px #777; -moz-box-shadow: 0 15px 10px #777; box-shadow: 0 15px 10px #777; -webkit-transform: rotate(-3deg); -moz-transform: rotate(-3deg); -o-transform: rotate(-3deg); -ms-transform: rotate(-3deg); transform: rotate(-3deg); } /*================================================== * Effect 4 * ===============================================*/ 
+ 
+ .effect4 { position: relative; } .effect4:after { z-index: -1; position: absolute; content: ""; bottom: 15px; right: 10px; left: auto; width: 50%; top: 80%; max-width:300px; background: #777; -webkit-box-shadow: 0 15px 10px #777; -moz-box-shadow: 0 15px 10px #777; box-shadow: 0 15px 10px #777; -webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -o-transform: rotate(3deg); -ms-transform: rotate(3deg); transform: rotate(3deg); } /*================================================== * Effect 5 * ===============================================*/ 
+ 
+ .effect5 { position: relative; } .effect5:before, .effect5:after { z-index: -1; position: absolute; content: ""; bottom: 25px; left: 10px; width: 50%; top: 80%; max-width:300px; background: #777; -webkit-box-shadow: 0 35px 20px #777; -moz-box-shadow: 0 35px 20px #777; box-shadow: 0 35px 20px #777; -webkit-transform: rotate(-8deg); -moz-transform: rotate(-8deg); -o-transform: rotate(-8deg); -ms-transform: rotate(-8deg); transform: rotate(-8deg); } .effect5:after {
+  -webkit-transform: rotate(8deg); 
+  -moz-transform: rotate(8deg); -o-transform: rotate(8deg);
+   -ms-transform: rotate(8deg); 
+   transform: rotate(8deg); 
+   right: 10px; left: auto;
+    } 
